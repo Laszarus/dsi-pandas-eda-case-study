@@ -37,4 +37,5 @@ ax = df_id_counts.plot(kind = 'scatter',
 ax.set_xlabel('Days Trending')
 ax.set_ylabel('Views (Log)')
 ax.set_title('Days trending vs Views in the US')
+plt.savefig('YouTube_Views and Days Trending_US.jpg')
 plt.show()
