@@ -7,7 +7,18 @@ There were files for stats on US, Russia, Mexico, Korea, Japan, India, Great Bri
 
 We took the Video ID column across data for the US, Great Britain, France, Germany, and Canada. We wanted to find which videos trended in multiple countries. Specifically, which countries shared the most common trending videos. 
 
-The Video ID datatype was text and luckily, no data was missing. Each ID appeared on a date when the video trended, so some Video IDs appeared on many different rows. We developed unique Video ID lists for each of the countries, showing videos that trended at least once. We looped through this list and inner joined the lists with each other finding the amount of videos that trended in multiple countries. The result was a matrix with columns and rows representing the countries. The value in each cell represented the amount a videos the trended in that cell’s column country and that cell’s row country. The result can be seen in a heat map below. As you can see the pairs with the most over lap were [Germany, France], [Canada, France], and [Canada, Germany]. 
+
+
+The Video ID datatype was text and luckily, no data was missing for our countries. Each ID appeared on a date when the video trended, so some Video IDs appeared on many different rows. We developed lists for each country showing its Video ID, Category ID and count of how many times each Category ID trended. We did more with this is the next section.
+
+![alt text](/images/list.png)
+
+
+We looped through this list and inner joined the lists with each other finding the amount of videos that trended in multiple countries. The result was a matrix with columns and rows representing the countries.
+
+![alt text](/images/matrix.png)
+
+ The value in each cell represented the amount a videos the trended in that cell’s column country and that cell’s row country. The result can be seen in a heat map below. As you can see the pairs with the most over lap were [Germany, France], [Canada, France], and [Canada, Germany]. 
 
 ![alt text](/images/heatmap.png)
 
