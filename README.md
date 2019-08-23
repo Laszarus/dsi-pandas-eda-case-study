@@ -27,7 +27,7 @@ We looped through this list and inner joined the lists with each other finding t
 ![alt text](/images/heatmap.png)
 
 
-Interpretation:
+
 ![alt text](/images/us_trends.png)
 ![alt text](/images/ca_trends.png)
 
