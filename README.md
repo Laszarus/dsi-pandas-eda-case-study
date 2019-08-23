@@ -12,6 +12,7 @@ We took the Video ID column across data for the US, Great Britain, France, Germa
 The Video ID datatype was text and luckily, no data was missing for our countries. Each ID appeared on a date when the video trended, so some Video IDs appeared on many different rows. We developed lists for each country showing its Video ID, Category ID and count of how many times each Category ID trended. We did more with this is the next section.
 
 ![alt text](/images/list.png)
+![alt text](/images/ca_head.png)
 
 
 We looped through this list and inner joined the lists with each other finding the amount of videos that trended in multiple countries. The result was a matrix with columns and rows representing the countries.
@@ -21,6 +22,12 @@ We looped through this list and inner joined the lists with each other finding t
  The value in each cell represented the amount a videos the trended in that cell’s column country and that cell’s row country. The result can be seen in a heat map below. As you can see the pairs with the most over lap were [Germany, France], [Canada, France], and [Canada, Germany]. 
 
 ![alt text](/images/heatmap.png)
+
+![alt text](/images/us_trends.png)
+![alt text](/images/ca_trends.png)
+
+
+
 
 ## Most Popular Categories in US
 
@@ -37,4 +44,3 @@ Although it’s apparent a video trending for a longer amount of time will get m
 ![alt text](/images/YouTube_Views_and_Days_Trending_US.jpg)
 
 When we first went to plot anything, we quickly realized that we had to redefine the data types from ‘objects’ to ‘numeric’. Once we updated the views, we identified an outlier that made the views so large and varied. We decided to group the views by log10. 
-
