@@ -11,7 +11,10 @@ We took the Video ID column across data for the US, Great Britain, France, Germa
 
 The Video ID datatype was text and luckily, no data was missing for our countries. Each ID appeared on a date when the video trended, so some Video IDs appeared on many different rows. We developed lists for each country showing its Video ID, Category ID and count of how many times each Category ID trended. We did more with this is the next section.
 
+US:
 ![alt text](/images/list.png)
+
+Canada:
 ![alt text](/images/ca_head.png)
 
 
@@ -23,6 +26,8 @@ We looped through this list and inner joined the lists with each other finding t
 
 ![alt text](/images/heatmap.png)
 
+
+Interpretation:
 ![alt text](/images/us_trends.png)
 ![alt text](/images/ca_trends.png)
 
